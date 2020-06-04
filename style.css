@@ -1,0 +1,224 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+
+body {
+  background-color: green;
+  background-color: yellow;
+}
+
+.video-container {
+  position: absolute;
+  width:100%;
+  height:500px;
+  overflow:hidden;
+  top:0;
+ 	left:0;
+}
+
+video {
+  width:100%;
+  position: relative;
+  z-index:-1;
+  background-size: cover;
+}
+
+/************************* **************************/
+
+.body-intro {
+  position: relative;
+  backgrund-color: green;
+  display:grid;
+	grid-template-columns: 30% 70%;
+}
+
+.body-intro .profile img {
+  margin-left: 20px;
+  border-radius:100%;
+}
+
+.body-intro .bio {
+    background-color:purple;
+}
+
+.body-intro .bio .head {
+    text-transform: uppercase;
+    text-align: center;
+}
+.body-intro .bio .bio-text {
+    background-color: yellow;
+    text-align: center;
+    font-size:10px;
+    color:white;
+
+}
+/******************************** ***************/
+
+.skill {
+  position: relative;
+  background-color: green;
+}
+
+.skills {
+  background-color:yellow;
+}
+//*
+ <header>
+    <div class="header">
+
+   	<div class="header-submenu">
+	   	<div class="logo">
+          <img src="DamianLogo.PNG"/>
+	   	</div>
+
+	   	<nav class="container">
+	       <ul>
+
+	             <li><a href="card-container-id">Education</a></li>
+	             <li><a href="#">Work Experience</a></li>
+	             <li><a href="#">Podcasts</a></li>
+               <li><a href="#">Skills</a></li>
+               <li><a href="#">Contact</a></li>
+	       </ul>
+	    </nav>
+
+    </div>
+
+    </div>
+ </header>
+*/
+
+.header {
+  display:flex;
+  flex-direction: column;
+  /*
+  border-style: solid;
+  border-color: yellow;
+ */
+}
+
+
+
+/* Header CSS */
+
+.header-submenu {
+	display:grid;
+	grid-template-columns: 30% 70%;
+}
+
+.logo {
+	margin-left: 50px;
+}
+.container {
+	position:relative;
+  /* it will be commmented off*/
+}
+
+.container ul  {
+	position: relative;
+	float:right;
+    margin-top:20px;
+}
+
+.container ul li {
+	list-style: none;
+	display: inline-block;
+
+
+}
+
+.container ul li a  {
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+	transition:0.5s;
+}
+
+.container ul li a:before {
+	content: '';
+	position:absolute;
+	top:0px;
+	bottom:1px;
+	left:0;
+	width:100%;
+	height:100%;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	transform:scaleY(2);
+	opacity:0;
+	transition:1.25s;
+}
+
+.container ul li a:hover {
+	background-color: rgb(43,232,184);
+}
+
+
+.container ul li a:hover:before {
+     opacity: 1;
+     transform:scaleY(1);
+}
+
+.header-catagories {
+	position:relative;
+    border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+
+}
+
+.header-catagories ul {
+
+	display:grid;
+	grid-template-columns:20% 20% 20% 20% 20% 20% 20%;
+	    /*
+      border-style: solid;
+      border-bottom: yellow;
+    */
+    margin-top:10px;
+    width:100%;
+    height:100%;
+
+}
+
+.header-submenu-two {
+
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.header-catagories ul li {
+   list-style:none;
+   position:relative;
+   border-right: 1px solid black;
+   border-left: 1px solid black;
+   text-align:center;
+}
+
+.header-catagories ul li:first-child {
+  border-left:0;
+}
+
+.header-catagories ul li:last-child {
+  border-right:0;
+}
+
+.header-catagories ul li a {
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    color:#000;
+    text-transform: uppercase;
+
+}
+
+.header-catagories ul li a:hover {
+    background-color: rgb(43,232,184);
+    transition:1.25s;
+}

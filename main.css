@@ -1,0 +1,410 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+}
+
+
+body {
+	background:white;
+	font-family: "Montserrat", sans-serif;
+	ackground-image:url("");
+	ackground-position: center;
+	ackground-repeat: no-repeat;
+
+}
+
+.header {
+  display:flex;
+  flex-direction: column;
+   z-index:1;
+  /*
+  border-style: solid;
+  border-color: yellow;
+ */
+}
+
+
+
+/* Header CSS */
+
+
+.header-submenu {
+	display:grid;
+	grid-template-columns: 30% 70%;
+}
+
+.logo {
+	margin-left: 50px;
+  z-index:1;
+}
+.container {
+	position:relative;
+  /* it will be commmented off*/
+}
+
+.container ul  {
+	position: relative;
+	float:right;
+    margin-top:20px;
+}
+
+.container ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+.container ul li a  {
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	transition:0.5s;
+}
+
+.container ul li a:before {
+	content: '';
+	position:absolute;
+	top:0px;
+	bottom:1px;
+	left:0;
+	width:100%;
+	height:100%;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	transform:scaleY(2);
+	opacity:0;
+	transition:1.25s;
+}
+
+.container ul li a:hover {
+	background-color: rgb(43,232,184);
+}
+
+
+.container ul li a:hover:before {
+     opacity: 1;
+     transform:scaleY(1);
+}
+
+.header-catagories {
+	position:relative;
+    border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+
+}
+
+.header-catagories ul {
+
+	display:grid;
+	grid-template-columns:20% 20% 20% 20% 20% 20% 20%;
+	    /*
+      border-style: solid;
+      border-bottom: yellow;
+    */
+    margin-top:10px;
+    width:100%;
+    height:100%;
+
+}
+
+.header-submenu-two {
+
+	border-top: 1px solid ;
+	border-bottom: 1px solid white;
+}
+
+.header-catagories ul li {
+   list-style:none;
+   position:relative;
+   border-right: 1px solid white;
+   border-left: 1px solid white;
+   text-align:center;
+}
+
+.header-catagories ul li:first-child {
+  border-left:0;
+}
+
+.header-catagories ul li:last-child {
+  border-right:0;
+}
+
+.header-catagories ul li a {
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    color:#000;
+    text-transform: uppercase;
+
+
+}
+
+.header-catagories ul li a:hover {
+    background-color: rgb(43,232,184);
+    transition:1.25s;
+}
+
+
+/********** body intro ****************/
+
+.body-intro {
+  position:relative;
+	display:grid;
+	grid-template-columns: 70% 30%;
+}
+
+.body-intro .profile {
+  background-color:;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-intro .profile img {
+  margin-left: 20px;
+  border-radius:50%;
+}
+
+.body-intro .bio {
+
+  align-items: center;
+  justify-content: center;
+  text-decoration-color: white;
+  z-index:1;
+}
+
+.body-intro .bio .head {
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    font-size:35px;
+}
+
+.body-intro .bio p {
+    text-align: center;
+    color:white;
+    font-size:20px;
+}
+
+
+/********** Education ****************/
+
+.card-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top:150px;
+	margin-bottom: 15px;
+
+}
+.card-container .card {
+
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px 1px rgb(43,232,184);
+  background-color: white;
+	color:black;
+  /* box-shadow: 10px 10px;  */
+}
+
+.card-container .card .card-body ul li {
+
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.card-container .card img {
+    margin-top: 5px;
+}
+
+/********** skills ****************/
+
+.skills {
+  position: relative;
+  margin-top:5px;
+  background-color:;
+	height:200px;
+}
+
+.myskills {
+	text-align:center;
+	color:green;
+	background-color:black;
+	border-radius:20px;
+	height:20px;
+	padding:15px;
+	width:200px;
+}
+
+.skills-container {
+	background-color: yellow;
+}
+
+.office {
+	background-color:rgb(43,232,184);
+	border-radius:20px;
+	height:20px;
+	width:20px;
+	margin-left:5px;
+	margin-top: 60px;
+	padding:15px;
+
+}
+
+
+
+.head-skills{
+	background-color:;
+	brder-radius:20px;
+	text-align: center;
+	heght:20px;
+	wdth:20px;
+	margin-left:42%;
+	margin-top: 25px;
+	padding:15px;
+	color:black;
+	font-size: 24px;
+}
+
+.skills-bottom {
+	width:100%;
+	height:400px;
+	background-color:;
+	margin-top:30px;
+}
+
+.second-row {
+	margin-top: 5px;
+}
+.second {
+	background-color:rgb(43,232,184);
+	border-radius:20px;
+	height:20px;
+	width:20px;
+	margin-left:5px;
+	margin-top: 15px;
+	padding:15px;
+}
+
+.third-row
+{
+	margin-top:5px;
+}
+.third {
+	background-color:rgb(43,232,184);
+	border-radius:20px;
+	height:20px;
+	width:20px;
+	margin-left:5px;
+	margin-top: 15px;
+	padding:15px;
+}
+
+.second:hover {
+	background-color:black;
+	color:white;
+}
+
+.third:hover {
+	  background-color:black;
+		color:white;
+}
+
+.office:hover {
+	  background-color:black;
+		color:white;
+}
+/********** work ****************/
+.work {
+   display:flex;
+   flex-direction: row;
+}
+
+.containers {
+  position: relative;
+  width: 250px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #D8D7F0;
+}
+
+.containers:hover .overlay {
+  opacity: 1;
+}
+
+.containers .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/********** podcast ****************/
+.podcast {
+  position: relative;
+   background-color:black;
+   display:flex;
+   flex-direction: horizontal;
+   width:100%;
+   height:300px;
+   align-items: center;
+   justify-content: center;
+	 margin-top: 20px;
+}
+/********* video ******/
+/*
+.video-container {
+    position: absolute;
+    width:100%;
+    height:100hv;
+    height: 400px;
+    overflow: hidden;
+
+}
+*/
+.video-container {
+  position: absolute;
+   width:100%;
+   height:550px;
+   overflow:hidden;
+   top:0;
+ 	left:0;
+}
+
+video {
+  width:100%;
+  z-index:-1;
+  background-size: cover;
+}
+
+/*video {
+  z-index:-100;
+  width:100%;
+  background-size: cover;
+}
